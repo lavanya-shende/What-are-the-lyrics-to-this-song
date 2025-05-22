@@ -16,15 +16,19 @@
     <p class="subtitle">Search lyrics that speak to your soul</p>
 
     <div class="form">
-      <input type="text" id="artist" placeholder="Artist (e.g., Billie Eilish)">
-      <input type="text" id="title" placeholder="Song Title (e.g., Ocean Eyes)">
-      <button onclick="getLyrics()">Get Lyrics 🎶</button>
+      <input list="artistList" id="artistInput" placeholder="Search artist...">
+      <datalist id="artistList"></datalist>
+      <input list="songList" id="title" placeholder="Search song...">
+      <datalist id="songList"></datalist>
+
+
+      
+      <button id="btn">Get Lyrics 🎶</button>
     </div>
 
     <div id="lyrics" class="lyrics">Your lyrics will appear here...</div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
-
